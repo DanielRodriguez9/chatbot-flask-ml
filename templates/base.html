@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Definimos el idioma de la página como inglés -->
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<!-- Incluimos una hoja de estilo CSS desde la carpeta 'static', que se llama 'style.css' -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Configuramos la codificación de caracteres de la página como UTF-8 -->
+    <title>Chatbot</title>
+    <!-- Definimos el título de la página como "Chatbot" -->
+</head>
+<body>
+<!-- Comienza el cuerpo de la página -->
+
+<div class="container">
+    <!-- Creamos un contenedor principal con la clase 'container' -->
+
+     <!--aca creamos nuestro texto para modificarlo en css-->
+     <div id="siguenos-text">Follow us @Cryptomilovat</div>
+
+    <div class="chatbox">
+        <!-- Creamos un contenedor para el chat con la clase 'chatbox' -->
+
+        <div class="chatbox__support">
+            <!-- Creamos un contenedor para el soporte del chat con la clase 'chatbox__support' -->
+
+            <div class="chatbox__header">
+                <!-- Creamos un encabezado para el chat con la clase 'chatbox__header' -->
+
+                <div class="chatbox__image--header">
+                    <!-- Creamos un contenedor para la imagen de encabezado con la clase 'chatbox__image--header' -->
+                    <img src="https://img.icons8.com/?size=80&id=7D4heMSLNhQE&format=png" alt="image">
+                    <!-- Mostramos una imagen en el encabezado -->
+                </div>
+                <div class="chatbox__content--header">
+                    <!-- Creamos un contenedor para el contenido del encabezado con la clase 'chatbox__content--header' -->
+
+                    <h4 class="chatbox__heading--header">Premium Coffe</h4>
+                    <!-- Mostramos un título de encabezado -->
+                    <p class="chatbox__description--header">Hi. My name is Coffebot... How can I help you?</p>
+                    <!-- Mostramos una descripción en el encabezado -->
+                </div>
+            </div>
+            <!-- Cierre del encabezado del chat -->
+
+            <div class="chatbox__messages">
+                <!-- Creamos un contenedor para los mensajes del chat con la clase 'chatbox__messages' -->
+                <div></div>
+            </div>
+            <!-- Cierre del contenedor de mensajes -->
+
+            <div class="chatbox__footer">
+                <!-- Creamos un pie de página para el chat con la clase 'chatbox__footer' -->
+
+                <input type="text" placeholder="Write a message...">
+                <!-- Creamos un campo de entrada de texto para escribir mensajes -->
+                <button class="chatbox__send--footer send__button">Send</button>
+                <!-- Creamos un botón para enviar mensajes -->
+            </div>
+        </div>
+        <!-- Cierre del contenedor de soporte del chat -->
+
+        <div class="chatbox__button">
+            <!-- Creamos un botón para abrir el chat con la clase 'chatbox__button' -->
+            <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
+            <!-- Mostramos una imagen en el botón para abrir el chat -->
+        </div>
+    </div>
+    <!-- Cierre del contenedor principal del chat -->
+
+</div>
+<!-- Cierre del contenedor principal de la página -->
+
+<script>
+    var  SCRIPT_ROOT =" {{ request.script_root }}";
+</script>
+<!-- Configuramos una variable JavaScript llamada '$SCRIPT_ROOT' con el valor de 'request.script_root' -->
+
+<script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+<!-- Incluimos un archivo JavaScript desde la carpeta 'static', que se llama 'app.js' -->
+
+</body>
+<!-- Cierre del cuerpo de la página -->
+</html>
+<!-- Cierre del documento HTML -->

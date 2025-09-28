@@ -1,0 +1,96 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hello", "hi","hola", "hey", "good morning", "good afternoon","hey"],
+      "responses": [
+        "👋 Hello! Welcome to *Premium Coffee* ☕✨\n\nPlease select an option:\n\n1️⃣ About the Company\n2️⃣ Our Products\n3️⃣ Promotions\n4️⃣ Payments & Shipping\n5️⃣ Contact an Agent\n6️⃣ Locations\n7️⃣ Hours\n8️⃣ Technical Support\n9️⃣ Loyalty Program\n\n👉 Reply with the number of your choice.\n\n"
+      ],
+      "context": ["main_menu"]
+    },
+    {
+      "tag": "menu_1_company",
+      "patterns": ["1", "about the company", "company", "who are you"],
+      "responses": [
+        "🏢 *About the Company*\n\nWe are *Premium Coffee*, specialized in high-quality Colombian coffee ☕🇨🇴.\n\n🌱 We work directly with local coffee farmers, ensuring sustainability and flavor in every cup.\n\n🔙 Type *menu* to return to the main menu.\n\n"
+      ]
+    },
+    {
+      "tag": "menu_2_products",
+      "patterns": ["2", "products", "what do you sell", "menu", "list"],
+      "responses": [
+        "📦 *Our Products*\n\n- ☕ Premium coffee beans\n- 🫘 Artisan ground coffee\n- 🍫 Artisan chocolates\n- 🫓 Coffee Bread\n - 🍪 Homemade cookies\n\n🎁 Gift sets available.\n\n🔙 Type *menu* to return to the main menu.\n\n"
+      ]
+    },
+    {
+      "tag": "menu_3_promotions",
+      "patterns": ["3", "promotions", "offers", "discounts"],
+      "responses": [
+        "🔥 *Current Promotions* 🔥\n\n- 2x1 on ground coffee (250g)\n- 20% OFF on chocolates\n- Gift set: Coffee + Cookies 🎁\n\n⚡ Valid until the end of the month.\n\n🔙 Type *menu* to return to the main menu.\n\n"
+      ]
+    },
+    {
+      "tag": "menu_4_payments_shipping",
+      "patterns": ["4", "payments", "payment methods", "buy", "shipping"],
+      "responses": [
+        "💳 *Payments & Shipping*\n\n✅ Payment methods:\n- Credit/Debit card\n- Bank transfer\n- Cash on delivery 🚚\n\n📦 Shipping:\n- National: 2-4 business days\n- International: 7-10 business days\n\n🔙 Type *menu* to return to the main menu.\n\n"
+      ]
+    },
+    {
+      "tag": "menu_5_contact",
+      "patterns": ["5", "contact", "agent", "support", "talk to someone"],
+      "responses": [
+        "📞 *Contact an Agent*\n\nWhatsApp: 👉 +57 300 123 4567\nEmail: 📧 support@premiumcoffee.com\n\n🕒 Hours: Monday to Saturday, 8am to 6pm\n\n🔙 Type *menu* to return to the main menu.\n\n"
+      ]
+    },
+    {
+      "tag": "menu_6_locations",
+      "patterns": ["6", "locations", "where are you", "branches"],
+      "responses": [
+        "📍 *Our Locations*\n\n- Bogotá: Calle 123 #45-67\n- Medellín: Cra 50 #12-34\n- Cali: Av. 6 #78-90\n\n🌍 We also ship nationally and internationally.\n\n🔙 Type *menu* to return to the main menu.\n\n"
+      ]
+    },
+    {
+      "tag": "menu_7_hours",
+      "patterns": ["7", "hours", "opening hours", "closing hours"],
+      "responses": [
+        "🕒 *Business Hours*\n\n- Monday to Friday: 8:00 AM - 6:00 PM\n- Saturday: 9:00 AM - 2:00 PM\n- Sunday & Holidays: Closed\n\n🔙 Type *menu* to return to the main menu.\n\n"
+      ]
+    },
+    {
+      "tag": "menu_8_support",
+      "patterns": ["8", "support", "technical", "help", "problem"],
+      "responses": [
+        "🛠️ *Technical Support*\n\nIf you have issues with your order or technical questions:\n\n1️⃣ Visit 👉 support.premiumcoffee.com\n2️⃣ Or write to us on WhatsApp: +57 311 222 3344\n\n📩 Response time: within 24h.\n\n🔙 Type *menu* to return to the main menu.\n\n"
+      ]
+    },
+    {
+      "tag": "menu_9_loyalty",
+      "patterns": ["9", "loyalty", "points", "rewards", "membership"],
+      "responses": [
+        "🎉 *Premium Coffee Loyalty Program*\n\nEarn points for every purchase and redeem them for:\n- ☕ Free coffee\n- 🍫 Gift chocolates\n- 🎁 Exclusive discounts\n\n👉 Sign up at: loyalty.premiumcoffee.com\n\n🔙 Type *menu* to return to the main menu.\n\n"
+      ]
+    },
+    {
+      "tag": "menu",
+      "patterns": ["menu","Menu", "menu", "MENU", "menú", "main menu", "back", "start over"],
+      "responses": [
+        "📋 *Main Menu*:\n\n1️⃣ About the Company\n2️⃣ Our Products\n3️⃣ Promotions\n4️⃣ Payments & Shipping\n5️⃣ Contact an Agent\n6️⃣ Locations\n7️⃣ Hours\n8️⃣ Technical Support\n9️⃣ Loyalty Program\n\n👉 Please reply with the number of your choice.\n\n"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "goodbye", "see you later", "talk to you later"],
+      "responses": [
+        "👋 Thank you for visiting *Premium Coffee*! ☕✨\nCome back soon.\n\n"
+      ]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": [
+        "😕 Sorry, I didn't understand your message.\n\nPlease select an option from the menu:\n\n1️⃣ About the Company\n2️⃣ Our Products\n3️⃣ Promotions\n4️⃣ Payments & Shipping\n5️⃣ Contact an Agent\n6️⃣ Locations\n7️⃣ Hours\n8️⃣ Technical Support\n9️⃣ Loyalty Program\n\n🔙 Or type *menu* to return.\n\n"
+      ]
+    }
+  ]
+}
