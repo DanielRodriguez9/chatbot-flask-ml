@@ -65,7 +65,7 @@ def predict():
                 response = random.choice(intent['responses'])
                 break
     else:
-        response = "No entiendo tu pregunta..."
+        response = "I dont understand you question..."
 
     message = {"answer": response}
 
