@@ -251,3 +251,50 @@ body {
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
+
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+    body {
+        height: auto; /* deja que el contenido fluya */
+        padding: 10px;
+    }
+
+    .chatbox__support {
+        width: 95%; /* casi todo el ancho del móvil */
+        height: 400px; /* altura ajustable */
+    }
+
+    .chatbox__footer input {
+        width: 70%; /* más espacio para el botón */
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    .chatbox__send--footer {
+        font-size: 14px;
+    }
+
+    .messages__item {
+        max-width: 90%; /* mensajes más anchos en móviles */
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    .chatbox__header {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+}
+
+
+@media (max-width: 900px) and (min-width: 601px) {
+    .chatbox__support {
+        width: 80%;
+        height: 420px;
+    }
+
+    .messages__item {
+        max-width: 75%;
+    }
+}
