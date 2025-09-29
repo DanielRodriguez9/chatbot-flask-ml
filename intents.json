@@ -4,7 +4,7 @@
       "tag": "greeting",
       "patterns": ["hello", "hi","hola", "hey", "good morning", "good afternoon","hey"],
       "responses": [
-        "👋 Hello! Welcome to *Premium Coffee* ☕✨\n\nPlease select an option:\n\n1️⃣ About the Company\n2️⃣ Our Products\n3️⃣ Promotions\n4️⃣ Payments & Shipping\n5️⃣ Contact an Agent\n6️⃣ Locations\n7️⃣ Hours\n8️⃣ Technical Support\n9️⃣ Loyalty Program\n\n👉 Reply with the number of your choice.\n\n"
+        "👋 Hello! Welcome to *Premium Coffee* ☕✨\n\nPlease select an option:\n\n1️⃣ About the Company\n2️⃣ Our Products\n3️⃣ Promotions\n4️⃣ Payments & Shipping\n5️⃣ Contact an Agent\n6️⃣ Locations\n7️⃣ Hours\n8️⃣ Technical Support\n9️⃣ Loyalty Program\n🔟 About My Creators\n\n👉 Please reply with the number of your choice.\n\n"
       ],
       "context": ["main_menu"]
     },
@@ -72,10 +72,17 @@
       ]
     },
     {
+      "tag": "menu_10_creators",
+      "patterns": ["10", "creators", "who created you", "quien te creo", "quien te creó", "tus creadores"],
+      "responses": [
+        "🤖 <b>About My Creators</b><br><br>👨‍💻 <b>Daniel Rodriguez</b><br>👉 <a href='https://x.com/dcryptrodriguez' target='_blank' style='color:#1DA1F2; text-decoration:underline;'>Follow on X</a><br><br>👨‍💻 <b>Cristian Rodriguez (Crypto Milovat)</b><br>👉 <a href='https://x.com/CryptoMilovat' target='_blank' style='color:#1DA1F2; text-decoration:underline;'>Follow on X</a><br><br>📺 You can also follow us on YouTube:<br>👉 <a href='https://www.youtube.com/@CryptoMilovat' target='_blank' style='color:#FF0000; text-decoration:underline;'>CryptoMilovat YouTube Channel</a><br><br>💡 Passion for <b>Technology, Innovation & Cryptos</b> ☕✨<br><br>🔙 Type <b>menu</b> to return to the main menu."
+      ]
+    },
+    {
       "tag": "menu",
       "patterns": ["menu","Menu", "menu", "MENU", "menú", "main menu", "back", "start over"],
       "responses": [
-        "📋 *Main Menu*:\n\n1️⃣ About the Company\n2️⃣ Our Products\n3️⃣ Promotions\n4️⃣ Payments & Shipping\n5️⃣ Contact an Agent\n6️⃣ Locations\n7️⃣ Hours\n8️⃣ Technical Support\n9️⃣ Loyalty Program\n\n👉 Please reply with the number of your choice.\n\n"
+        "📋 *Main Menu*:\n\n1️⃣ About the Company\n2️⃣ Our Products\n3️⃣ Promotions\n4️⃣ Payments & Shipping\n5️⃣ Contact an Agent\n6️⃣ Locations\n7️⃣ Hours\n8️⃣ Technical Support\n9️⃣ Loyalty Program\n🔟 About My Creators\n👉 Please reply with the number of your choice.\n\n"
       ]
     },
     {

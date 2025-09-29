@@ -103,8 +103,22 @@ body {
 }
 
 
+
 .chatbox__button {
-    text-align: right;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 999;
+}
+
+/* Ajuste de ícono dentro del botón */
+.chatbox__button img {
+    width: 32px;
+    height: 32px;
 }
 
 .send__button {
@@ -253,20 +267,28 @@ body {
 }
 
 
-/* Pantallas pequeñas (móviles) */
+/* 📱 Móviles (pantallas pequeñas) */
 @media (max-width: 600px) {
-    body {
-        height: auto; /* deja que el contenido fluya */
-        padding: 10px;
+    .chatbox__support {
+        width: 80vw;     /* más compacto que 90% */
+        height: 60vh;    /* ocupa menos altura */
+        border-radius: 15px;
     }
 
-    .chatbox__support {
-        width: 95%; /* casi todo el ancho del móvil */
-        height: 400px; /* altura ajustable */
+    .chatbox__button {
+        width: 55px;
+        height: 55px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .chatbox__button img {
+        width: 30px;
+        height: 30px;
     }
 
     .chatbox__footer input {
-        width: 70%; /* más espacio para el botón */
+        width: 70%;
         font-size: 14px;
         padding: 8px 10px;
     }
@@ -276,7 +298,7 @@ body {
     }
 
     .messages__item {
-        max-width: 90%; /* mensajes más anchos en móviles */
+        max-width: 90%;
         font-size: 14px;
         padding: 6px 10px;
     }
@@ -288,13 +310,40 @@ body {
 }
 
 
-@media (max-width: 900px) and (min-width: 601px) {
+/* 📱💻 Tablets (pantallas medianas) */
+@media (min-width: 601px) and (max-width: 900px) {
     .chatbox__support {
-        width: 80%;
-        height: 420px;
+        width: 70vw;
+        height: 65vh;
     }
 
     .messages__item {
         max-width: 75%;
     }
+
+    .chatbox__button {
+        width: 60px;
+        height: 60px;
+    }
 }
+
+
+/* 💻 Desktop (pantallas grandes) */
+@media (min-width: 901px) {
+    .chatbox__support {
+        width: 350px;  /* tamaño fijo más pro */
+        height: 420px;
+    }
+
+    .messages__item {
+        max-width: 70%;
+    }
+
+    .chatbox__button {
+        width: 65px;
+        height: 65px;
+    }
+}
+
+
+
