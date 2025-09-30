@@ -32,6 +32,13 @@ The project demonstrates:
 
 ---
 
+##  live demo
+
+You can try the chatbot here [Chatbot in Render](https://chatbot-premium-coffee.onrender.com/)
+
+---
+
+
 ##  Technologies Used
 - **Python 3.9+**
 - **Flask** (backend web framework)
