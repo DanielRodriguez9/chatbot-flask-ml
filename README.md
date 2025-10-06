@@ -69,7 +69,7 @@ venv\Scripts\activate      # On Windows
 
   pip install -r requirements.txt
 
-  ▶️ Usage
+- Usage
 
 Run the Flask app:
 
@@ -87,26 +87,26 @@ You’ll see the chatbot interface where you can start chatting.
 
 ## Example Usage
 
-👋 Hello! Welcome to *Premium Coffee* ☕✨
+ Hello! Welcome to *Premium Coffee* 
 Please select an option:
 
-1️⃣ About the Company
-2️⃣ Our Products
-3️⃣ Promotions
-4️⃣ Payments & Shipping
-5️⃣ Contact an Agent
-6️⃣ Locations
-7️⃣ Hours
-8️⃣ Technical Support
-9️⃣ Loyalty Program
+1 About the Company
+2️ Our Products
+3️ Promotions
+4️ Payments & Shipping
+5️ Contact an Agent
+6️ Locations
+7️ Hours
+8️ Technical Support
+9️ Loyalty Program
 
-👉 Reply with the number of your choice.
+ Reply with the number of your choice.
 
 ---
 
 Typing menu always brings you back to the Main Menu.
 
-📂 Project Structure
+ Project Structure
 chatbot-flask-ml/
 │── app.py              # Flask entry point
 │── chat.py             # Chatbot logic
@@ -133,5 +133,5 @@ Train with more advanced ML/NLP models
 ## Author
 
 Daniel Ricardo Rodriguez (Crypto Milovat)
-📧 Email: ricardoparra09999@gmail.com
+ Email: ricardoparra09999@gmail.com
 
